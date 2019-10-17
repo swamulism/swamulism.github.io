@@ -1,12 +1,3 @@
-// var animation = bodymovin.loadAnimation({
-//     container: document.getElementById('deliveryAnimation'),
-//     renderer: 'svg',
-//     loop: true,
-//     autoplay: true,
-//     path: 'alert.json'
-// })
-
-
 $(function() {
     $('.bodymovin').each(function() {
         var element = $(this);
@@ -19,3 +10,17 @@ $(function() {
         });
     });
 });
+
+
+
+// var x = document.getElementsByClassName("bodymovin");
+// var i;
+// for (i = 0; i < x.length; i++) {
+//   var animation = bodymovin.loadAnimation({
+//     container: x[0],
+//     renderer: 'svg',
+//     loop: true,
+//     autoplay: true,
+//     path: x[0].getAttribute("data-icon")
+// });
+// }
