@@ -1346,6 +1346,11 @@ div#preloader {
   transition: 0.4s;
 }
 
+/*
+Mission area
+*/
+
+
 .mission-area {
   background: rgba(0, 0, 0, 0) url("../img/background/about-bg.jpg") no-repeat fixed center top / cover;
   height: auto;
@@ -1434,6 +1439,43 @@ div#preloader {
   text-transform: uppercase;
 }
 
+.mission-icon {
+  color: #fff;
+  display: inline-block;
+  font-size: 36px;
+  line-height: 36px;
+  margin-bottom: 20px;
+}
+
+.single-mission>h4 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.single-mission>p {
+  color: #fff;
+  font-size: 14px;
+}
+
+.section-headline.mission-head>h2 {
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.section-headline.mission-head>p {
+  color: #fff;
+}
+
+
+.mission-details {
+  padding-top: 40px;
+  transition: all 0.5s ease 0s;
+}
+
+.mission-details:hover h4, .mission-details:hover .mission-icon {
+  color: #3EC1D5;
+}
 
 /*----------------------------------------
  12.Testimonial Area Css
