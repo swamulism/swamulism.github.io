@@ -2480,6 +2480,14 @@ span.email-notes {
   padding-top: 30px;
 }
 
+.video-area {
+  background-color: #f9f9f9;
+}
+
+.video-center {
+  text-align: center;
+}
+
 /*----------------------------------------
  .End CSS
 ----------------------------------------*/
