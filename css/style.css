@@ -922,6 +922,7 @@ div#preloader {
 }
 
 .team-img {
+  text-align: center;
   position: relative;
 }
 
