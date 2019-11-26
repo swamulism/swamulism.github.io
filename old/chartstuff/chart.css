@@ -1,0 +1,61 @@
+.boxes {
+    display: block;
+    align-content: center;
+}
+
+.box {
+    display: inline-block;
+    border-style: solid;
+    border-color: grey;
+    padding: 15px;
+    text-align: center;
+    margin: 10px 40px 10px 10px;
+}
+
+.topBox {
+    display: inline-block;
+    border-style: solid;
+    border-color: grey;
+    width: 15%;
+    padding: 5px;
+    text-align: center;
+    margin: 10px 40px 10px 10px;
+}
+
+.bBox {
+    display: block;
+    border-style: solid;
+    border-color: grey;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    margin: 10px 40px 10px 10px;
+}
+
+#menu {
+    width: 100px;
+}
+
+#centerContent {
+    display: inline-flex;
+    margin-bottom: 50px;
+}
+
+body {
+    display: block;
+}
+
+#all {
+    display: inline-flex;
+}
+
+#leftContent {
+    width: 60%;
+    display: block;
+    float: left;
+}
+
+#rightContent {
+    width: 40%;
+    float: right;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>English - Clicker</title>
+	<link rel="stylesheet" href="assets/css/stylesheet.css">
+	<script type="text/javascript" charset="utf-8" src="assets/js/gameFunctionality.js"></script>
+	<script type="text/javascript" charset="utf-8" src="assets/js/game.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div id="wrapper">
+		<header id="header">
+			<h1><a href="/index.html">Home</a></h1>
+			<div id="menu-button" onclick="showMenu()">
+				<a href="#">Menu   <i class="fa fa-bars"></i></a>
+			</div>
+		</header>
+		<div id="main">
+			<div id="game">
+				<div id="stats">
+					<ul>
+						<h3 class="stats">Statistics</h3>
+						<li class="stats" id="wordsCorrect">Words Correct: 0</li>
+						<li class="stats" id="wordsIncorrect">Incorrect Guesses: 0</li>
+						<li class="stats" id="wordPercentage">Percent Correct: NaN</li>
+					</ul>
+				</div>
+				<div id="coreGame">
+					<div id="pictures">
+						<img id="img1" src="https://via.placeholder.com/250x250" class="img"></img>
+						<img id="img2" src="https://via.placeholder.com/250x250" class="img"></img>
+					</div>
+					<div id="buttons-clicked">
+						<table>
+							<tr id="guessedLetters">
+
+							</tr>
+						</table>
+					</div>
+					<div id="text-box">
+						<div id="button-options">
+							<table>
+								<tr>
+									<th><button class="enabled btnGuess"></button></th>
+									<th><button class="enabled btnGuess"></button></th>
+									<th><button class="enabled btnGuess"></button></th>
+									<th><button class="enabled btnGuess"></button></th>
+									<th><button class="enabled btnGuess"></button></th>
+								</tr>
+								<tr>
+									<th><button class="enabled btnGuess"></button></th>
+									<th><button class="enabled btnGuess"></button></th>
+									<th><button class="enabled btnGuess"></button></th>
+									<th><button class="enabled btnGuess"></button></th>
+									<th><button class="enabled btnGuess"></button></th>
+								</tr>
+							</table>
+						</div>
+						<button id="btnGuess" class="enabled">Submit</button>
+						<div id="tooltip">
+							<button id="btnHint" class="enabled" onclick="showHint()"><i class="fa fa-info-circle"></i> Hint</button>
+							<span id="tooltiptext"></span>
+						</div>
+						<button id="btnReset" class="enabled">Reset</button>
+					</div>
+					<div id="points">
+						<i class="fa fa-usd"></i>
+						<p>Points: 0</p>
+					</div>
+					<div id="banner">
+						You have guessed incorrectly.
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+		</div>
+	</div>
+
+	<div id="menu">
+		<div id="menu-context">
+			<h3>Menu</h3>
+			<ul id="menu-list">
+				<li class="menu-link"><a href="/">Main</a></li>
+				<li class="menu-link"><a href="/english/">English - Click</a></li>
+				<li class="menu-link"><a href="/chinese/">Chinese</a></li>
+				<li class="menu-link"><a href="/editor/">Template Creator</a></li>
+				<li class="menu-link"><a href="/faq/">FAQ</a></li>
+				<li class="menu-link"><a href="#">Login</a></li>
+			</ul>
+			<a href="#" class="closeNav" onclick="closeNavMenu()"><i class="fa fa-times"></i></a>
+		</div>
+	</div>
+
+	<div id="hint">
+		<div id="hint-context">
+			<h3>Hint</h3>
+			<div id="hint-details">
+				<img id="imgHint" src="http://via.placeholder.com/250x250" class="img"></img>
+			</div>
+			<button id="btnCloseHint" class="enabled">Close</button>
+			<a href="#" class="closeNav" onclick="closeHint()"><i class="fa fa-times"></i></a>
+		</div>
+	</div>
+</body>
+
+</html>
